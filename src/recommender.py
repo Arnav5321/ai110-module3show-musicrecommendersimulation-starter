@@ -63,7 +63,7 @@ def load_songs(csv_path: str) -> List[Dict]:
     return songs
 
 def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
-    """Score a song against user preferences (+2 genre, +2 mood, +1 energy proximity) and return (score, reasons)."""
+    """Score a song against user preferences (+1 genre, +2 mood, +2 energy proximity) and return (score, reasons)."""
     score = 0.0
     reasons: List[str] = []
 
